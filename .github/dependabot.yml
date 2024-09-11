@@ -42,3 +42,15 @@ updates:
       - dependabot
     assignees:
       - dependabot
+  
+  - package-ecosystem: "npm"
+    directory: "/" 
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    commit-message:
+      include: scope
+      prefix: "npm"
+    labels: []
+    rebase-strategy: disabled
