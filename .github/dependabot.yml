@@ -4,19 +4,38 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    labels:
-      - "dependabot"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    commit-message:
+      include: scope
+      prefix: "pip"
+    labels: []
+    rebase-strategy: disabled
       
   - package-ecosystem: "docker"
     directory: "/" 
     schedule:
       interval: "daily"
-    labels:
-      - "dependabot"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    commit-message:
+      include: scope
+      prefix: "docker"
+    labels: []
+    rebase-strategy: disabled
   
   - package-ecosystem: "github-actions"
     directory: "/" 
     schedule:
       interval: "daily"
-    labels:
-      - "dependabot"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    commit-message:
+      include: scope
+      prefix: "github-actions"
+    labels: []
+    rebase-strategy: disabled
+    reviewers:
+      - dependabot
+    assignees:
+      - dependabot
