@@ -6,6 +6,9 @@ updates:
       interval: "daily"
       time: "09:00"
       timezone: "Asia/Kolkata"
+    ignore:
+      - dependency-name: nextcord
+      - dependency-name: python-dotenv
     commit-message:
       include: scope
       prefix: "pip"
