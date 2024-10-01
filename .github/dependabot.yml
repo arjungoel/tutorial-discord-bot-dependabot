@@ -33,8 +33,10 @@ updates:
     registries:
       - dockerhub
     assignees:
+      - "dependabot"
       - "arjungoel1995@gmail.com"
     reviewers:
+      - "dependabot"
       - "arjungoel1995@gmail.com"
     open-pull-requests-limit: 10
     directory: "/" 
