@@ -45,9 +45,11 @@ updates:
     labels: []
     rebase-strategy: disabled
     reviewers:
-      - dependabot
+      - "dependabot"
+      - "arjungoel1995@gmail.com"
     assignees:
-      - dependabot
+      - "dependabot"
+      - "arjungoel1995@gmail.com"
   
   # - package-ecosystem: "npm"
   #   directory: "/" 
