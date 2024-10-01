@@ -6,12 +6,18 @@ updates:
       interval: "daily"
       time: "09:00"
       timezone: "Asia/Kolkata"
-    ignore:
-      - dependency-name: nextcord
-      - dependency-name: python-dotenv
+    target-branch: main
+    assignees:
+      - "arjungoel1995@gmail.com"
+    reviewers:
+      - "arjungoel1995@gmail.com"
+    open-pull-requests-limit: 30
+    # ignore:
+    #   - dependency-name: nextcord
+    #   - dependency-name: python-dotenv
     commit-message:
       include: scope
-      prefix: "pip"
+      prefix: "fix (pip)"
     labels: []
     rebase-strategy: disabled
       
