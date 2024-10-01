@@ -22,6 +22,12 @@ updates:
     rebase-strategy: disabled
       
   - package-ecosystem: "docker"
+    target-branch: main
+    assignees:
+      - "arjungoel1995@gmail.com"
+    reviewers:
+      - "arjungoel1995@gmail.com"
+    open-pull-requests-limit: 10
     directory: "/" 
     schedule:
       interval: "daily"
@@ -34,6 +40,12 @@ updates:
     rebase-strategy: disabled
   
   - package-ecosystem: "github-actions"
+    target-branch: main
+    assignees:
+      - "arjungoel1995@gmail.com"
+    reviewers:
+      - "arjungoel1995@gmail.com"
+    open-pull-requests-limit: 10
     directory: "/" 
     schedule:
       interval: "daily"
