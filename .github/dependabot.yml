@@ -46,7 +46,7 @@ updates:
       timezone: "Asia/Kolkata"
     commit-message:
       include: scope
-      prefix: "docker"
+      prefix: "prefix (docker)"
     labels: []
     rebase-strategy: disabled
   
