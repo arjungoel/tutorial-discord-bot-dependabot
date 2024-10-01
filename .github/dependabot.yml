@@ -1,4 +1,11 @@
 version: 2
+registries:
+  dockerhub:
+    type: docker-registry
+    url: https://registry.hub.docker.com
+    username: argl131095
+    password: ${{secrets.MY_DOCKERHUB_PASSWORD}}
+
 updates:
   - package-ecosystem: "pip"
     directory: "/"
@@ -23,6 +30,8 @@ updates:
       
   - package-ecosystem: "docker"
     target-branch: main
+    registries:
+      - dockerhub
     assignees:
       - "arjungoel1995@gmail.com"
     reviewers:
@@ -42,8 +51,10 @@ updates:
   - package-ecosystem: "github-actions"
     target-branch: main
     assignees:
+      - "dependabot"
       - "arjungoel1995@gmail.com"
     reviewers:
+      - "dependabot"
       - "arjungoel1995@gmail.com"
     open-pull-requests-limit: 10
     directory: "/" 
@@ -56,13 +67,7 @@ updates:
       prefix: "github-actions"
     labels: []
     rebase-strategy: disabled
-    reviewers:
-      - "dependabot"
-      - "arjungoel1995@gmail.com"
-    assignees:
-      - "dependabot"
-      - "arjungoel1995@gmail.com"
-  
+
   # - package-ecosystem: "npm"
   #   directory: "/" 
   #   schedule:
